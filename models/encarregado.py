@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 
 @dataclass
-class Ecarregado:
+class Encarregado:
     id: int
-    encarregado: str
+    usuario: str
     senha: str

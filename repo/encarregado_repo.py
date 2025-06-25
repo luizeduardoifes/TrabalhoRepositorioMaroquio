@@ -1,13 +1,11 @@
-from models.encarregado import Ecarregado
-from sql.encarregado_sql import CRIAR_TABELA_ENCARREGADO
 from data.database import obter_conexao
+from sql.encarregado_sql import *
+
 
 def criar_tabela_encarregado():
-    """Cria a tabela 'encarregado' no banco de dados."""
+    """Cria a tabela Encarregado se ela não existir."""
     conexao = obter_conexao()
     cursor = conexao.cursor()
-    cursor.execute(CRIAR_TABELA_ENCARREGADO)
+    cursor.execute(CREATE_TABLE_ENCARREGADO)
     conexao.commit()
     conexao.close()
-
-    

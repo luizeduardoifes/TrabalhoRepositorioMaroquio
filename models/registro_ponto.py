@@ -11,3 +11,4 @@ class RegistroPonto:
     entrada_intervalo: time
     saida_intervalo: time
     saida: time
+    dias_remidos: float 
